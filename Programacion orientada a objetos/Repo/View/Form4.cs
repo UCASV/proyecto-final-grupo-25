@@ -156,6 +156,11 @@ namespace Prueba03
 
                 db.Add(vac2);
                 db.SaveChanges();
+                MessageBox.Show("Cita creada exitosamente!", "Gobierno de El Salvador",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form3 ventana = new Form3(idGestor);
+                this.Close();
+                ventana.Show();
             }
             else
             {
